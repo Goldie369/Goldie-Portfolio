@@ -23,7 +23,7 @@
 
 - https://github.com/Goldie369
 
-- https://goldie369.github.io/Goldie-s-Portfolio/
+- https://goldie369.github.io/Goldie-Portfolio/
 
 
 
