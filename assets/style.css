@@ -1,0 +1,343 @@
+/* Added a color */
+:root {
+  --white: white;
+  --blueish: #0e214f;
+  --light-coral: white;
+  --blue:#0e214f
+ 
+}
+
+/* Added font-size to 70% and width to auto */
+html {
+  font-size: 70%;
+  width: auto;
+}
+
+/* Added font and background color */
+body {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 23px;
+    line-height: 1.5;
+    background-color: var(--white);
+    color: var(--blue);
+    
+}
+
+  
+
+/* set sizes for headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  padding-left: 1%; 
+  padding-right: 1%
+  
+}
+
+
+
+/* Added a flex direction - colum */
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  
+}
+
+/* Added a flex direction colum and display flex */
+.header-els {
+  display: flex;
+  flex-direction: column;
+ 
+}
+/* Added a font size*/
+.header-els h1 {
+  font-size: 40px;
+
+
+}
+/* Added a padding */
+.nav-menu li,
+.contact-menu li {
+  font-weight: bold;
+  padding: 1rem;
+  
+}
+
+/* Added a styling and underline */
+li a {
+  text-decoration: none;
+  border-bottom: 3px var(--blue);
+  padding-bottom: 3px;
+  color: var(--blue);
+  transition: 0.5s;
+  bottom: -10px;
+  left: 0;
+  position: flex;
+  content: '';
+  height: 3px;
+  justify-content: space-between;
+}
+
+/* Added a styling*/
+li a:hover {
+  color: var(--white);
+  border-bottom: 3px solid var(--blue);
+  padding-bottom: 2px;
+  color: var(--blue);
+}
+
+li a:hover ::after{
+  width: 100%;
+}
+
+/* Added a flex direction - colum */
+.article-main {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+/* Added padding */
+
+.container-right p {
+  padding-left: 4%; 
+  padding-right: 15%;
+  border-radius: 30px;
+}
+
+/* Added a sizes */
+.box {
+  width: 100%;
+  height: 100%;
+} 
+
+.main-box {
+  height: 30vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Added a ;possition */
+.main-sub-h {
+  position: relative;
+  margin-top: -8.5rem;
+  color: white;
+}
+
+/* Added a flexbox ajustment */
+.project-box {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Added a flexbox size */
+.first-project-box {
+  height: 40vh;
+  border: 5px solid var(--);
+  box-shadow: 8px 8px rgb(15, 68, 165);
+  
+
+}
+
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+  height: 25vh;
+  border: 5px solid var(--);
+  box-shadow: 8px 8px rgb(55, 104, 203); 
+}
+
+.figure-class {
+  height: 100%;
+  width: 100%;
+}
+
+/* Added a box shadow for nice effect*/
+
+figure img:hover {
+  box-shadow: 0 0 20px var(--white); 
+  
+}
+
+/* Added a possition for the image*/
+.project-header {
+  position: relative;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  text-align: left;
+  -webkit-text-stroke: 0.5px var(--white);
+  font-weight: bold;
+  
+
+}
+
+.project-p {
+  position: relative;
+  margin-top: -1rem;
+  text-align: left;
+  background-color: var(--blueish);
+  color: var(--white);
+}
+
+.contact-menu li {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Media screen ajustment */
+@media screen and (min-width: 994px) {
+    /*Added a possitioning */
+    .header-els {
+      flex-direction: row;
+      justify-content: space-between;
+     
+    }
+
+    .nav-menu {
+      margin: auto 2rem;
+      position: relative;
+      top: 25%;
+    }
+
+    .nav-menu li {
+      display: inline;
+      position: relative;
+      top: 50%;
+    }
+
+    .main-sub-h {
+      position: relative;
+      margin-top: -8.5rem;
+      margin-left: 50%;
+      flex-shrink: 1;
+    }
+
+    .article-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 15vh;
+      
+    }
+
+    h3 {
+      width: 30%;
+      text-align: right;
+    }
+
+    .container-right {
+      width: 85%;
+      padding-right: 20rem;
+    }
+
+    /* Added a padding */
+    .container-right p {
+      padding-left: 1%;
+      padding-right: 2%;
+    }
+
+    
+    /* Added a flex box styke and possitioning */
+    .first-project-box {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 65vw;
+      height: 59vh;
+      justify-self: center;
+      
+    }
+
+    /* Added style and position */
+    .box-2 {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      width: 23vw;
+      justify-self: center;
+    }
+
+    .box-3 {
+      grid-column-start: 2;
+      grid-row-start: 2;
+      width: 23vw;
+      justify-self: center;
+    }
+
+    .box-4 {
+      grid-column-start: 1;
+      grid-row-start: 3;
+      width: 23vw;
+      justify-self: center;
+    }
+
+    .box-5 {
+      grid-column-start: 2;
+      grid-row-start: 3;
+      width: 23vw;
+      justify-self: center;
+    }
+
+    /* Added a display grid to the box */
+    
+    .project-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 5%;
+      margin-right: 1.5vw;
+      
+    }
+
+    .contact-menu {
+      margin: auto 2rem;
+      position: relative;
+      top: 25%;
+      padding-right: 10%;
+    }
+
+    /* Added a possition to the menu */
+    #contact-me {
+      margin:6.5vh right;
+      padding-right: 10%;
+    }
+
+    .contact-me {
+      margin: left;
+      padding-left: 2%;
+      padding-bottom: 1%;
+     
+      
+    }
+
+    /* Added a posstion */
+    .contact-menu {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .contact-menu li {
+      display: inline;
+      position: relative;
+      top: 50%;
+      padding-left: 0;
+    }
+  }
