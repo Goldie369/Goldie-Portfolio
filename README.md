@@ -17,7 +17,7 @@
 
 
 ### Picture of deployed site
-<img src="">
+<img src="./images/Portfolio webpage.jpg">
 
 # 🔗 Links
 
